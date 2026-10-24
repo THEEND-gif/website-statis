@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kicau Nusantara — Komunitas Pecinta Burung</title>
+  <meta name="description" content="Kicau Nusantara adalah komunitas pecinta burung: berbagi ilmu, kegiatan rutin, dan kebersamaan sesama penggemar burung.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#beranda">Lewati ke konten</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header" id="header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#beranda" class="brand">
+        <span class="brand-icon" aria-hidden="true">🐦</span>
+        <span>Kicau<strong>Nusantara</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#beranda" class="nav-link">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="#galeri" class="nav-link">Galeri</a></li>
+        <li><a href="#jadwal" class="nav-link">Jadwal Kegiatan</a></li>
+        <li><a href="#tips" class="nav-link">Tips Merawat Burung</a></li>
+        <li><a href="#gabung" class="btn btn-small">Gabung</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ BERANDA ============ -->
+    <section class="hero" id="beranda">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="float f1">🐦</span>
+        <span class="float f2">🦜</span>
+        <span class="float f3">🕊️</span>
+        <span class="float f4">🐤</span>
+        <span class="float f5">🪶</span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Komunitas Pecinta Burung</p>
+          <h1>Satu hobi, <em>sejuta kicau</em>, satu keluarga.</h1>
+          <p class="lead">
+            Kicau Nusantara adalah rumah bagi para penggemar burung — dari pemula yang baru punya satu sangkar
+            hingga kolektor berpengalaman. Kami berbagi ilmu, cerita, dan kegembiraan merawat sahabat berbulu.
+          </p>
+          <div class="hero-actions">
+            <a href="#jadwal" class="btn">Lihat Jadwal Kegiatan</a>
+            <a href="#tips" class="btn btn-ghost">Baca Tips Perawatan</a>
+          </div>
+        </div>
+
+        <aside class="next-event reveal" aria-label="Kegiatan terdekat">
+          <p class="next-label">Kegiatan terdekat</p>
+          <h2 id="nextTitle">Memuat…</h2>
+          <p class="next-meta" id="nextMeta"></p>
+          <div class="countdown" id="countdown" aria-live="polite">
+            <div><span id="cdDays">0</span><small>Hari</small></div>
+            <div><span id="cdHours">0</span><small>Jam</small></div>
+            <div><span id="cdMins">0</span><small>Menit</small></div>
+            <div><span id="cdSecs">0</span><small>Detik</small></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container stats reveal">
+        <div class="stat"><span class="stat-num" data-target="250">0</span><span class="plus">+</span><small>Anggota aktif</small></div>
+        <div class="stat"><span class="stat-num" data-target="48">0</span><span class="plus">+</span><small>Kegiatan per tahun</small></div>
+        <div class="stat"><span class="stat-num" data-target="35">0</span><span class="plus">+</span><small>Jenis burung dirawat</small></div>
+        <div class="stat"><span class="stat-num" data-target="6">0</span><small>Tahun berdiri</small></div>
+      </div>
+    </section>
+
+    <!-- ============ TENTANG KAMI ============ -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Tentang Kami</p>
+          <h2>Dari obrolan warung kopi menjadi komunitas</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Kicau Nusantara bermula dari sekelompok teman yang rutin bertemu di akhir pekan untuk bertukar cerita
+              tentang burung peliharaan mereka. Obrolan sederhana itu tumbuh menjadi komunitas yang terbuka bagi siapa
+              saja yang mencintai burung, apa pun jenis dan tingkat pengalamannya.
+            </p>
+            <p>
+              Kami percaya bahwa hobi memelihara burung paling indah ketika dijalani dengan bertanggung jawab:
+              burung yang sehat, kandang yang layak, dan pemilik yang terus belajar. Karena itu setiap kegiatan kami
+              selalu menyelipkan ilmu, bukan sekadar kumpul-kumpul.
+            </p>
+            <ul class="check-list">
+              <li>Terbuka untuk pemula maupun kolektor</li>
+              <li>Mengutamakan kesejahteraan burung</li>
+              <li>Mendukung penangkaran dan menolak perdagangan burung liar ilegal</li>
+            </ul>
+          </div>
+
+          <div class="cards">
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">🎯</span>
+              <h3>Visi</h3>
+              <p>Menjadi wadah pecinta burung yang ramah, edukatif, dan peduli kelestarian satwa.</p>
+            </article>
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">🌱</span>
+              <h3>Misi</h3>
+              <p>Berbagi ilmu perawatan, mengadakan pertemuan rutin, dan mendorong hobi yang bertanggung jawab.</p>
+            </article>
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">🤝</span>
+              <h3>Nilai Kami</h3>
+              <p>Kekeluargaan, saling berbagi, kejujuran, dan hormat pada alam.</p>
+            </article>
+          </div>
+        </div>
+
+        <h3 class="subhead reveal">Pengurus Komunitas</h3>
+        <div class="team">
+          <article class="member reveal">
+            <div class="avatar" style="--a:#2f6f4e" aria-hidden="true">BR</div>
+            <h4>Budi Raharjo</h4>
+            <p>Ketua Komunitas</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar" style="--a:#d98e04" aria-hidden="true">SW</div>
+            <h4>Siti Wulandari</h4>
+            <p>Sekretaris</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar" style="--a:#c2573a" aria-hidden="true">AP</div>
+            <h4>Agus Prasetyo</h4>
+            <p>Koordinator Kegiatan</p>
+          </article>
+          <article class="member reveal">
+            <div class="avatar" style="--a:#3a7ca5" aria-hidden="true">DN</div>
+            <h4>Dewi Nurhaliza</h4>
+            <p>Bendahara</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERI ============ -->
+    <section class="section section-alt" id="galeri">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Galeri</p>
+          <h2>Momen dan koleksi anggota</h2>
+          <p class="section-sub">Klik gambar untuk memperbesar. Gunakan filter untuk melihat kategori tertentu.</p>
+        </div>
+
+        <div class="filters reveal" id="galleryFilters" role="group" aria-label="Filter galeri">
+          <button class="chip active" data-filter="semua">Semua</button>
+          <button class="chip" data-filter="kicau">Burung Kicau</button>
+          <button class="chip" data-filter="hias">Burung Hias</button>
+          <button class="chip" data-filter="kegiatan">Kegiatan</button>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ============ JADWAL KEGIATAN ============ -->
+    <section class="section" id="jadwal">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Jadwal Kegiatan</p>
+          <h2>Mari bertemu dan belajar bersama</h2>
+          <p class="section-sub">Semua kegiatan gratis untuk anggota. Tamu dan calon anggota juga boleh datang.</p>
+        </div>
+
+        <div class="filters reveal" id="scheduleFilters" role="group" aria-label="Filter jadwal">
+          <button class="chip active" data-filter="semua">Semua</button>
+          <button class="chip" data-filter="akan">Akan datang</button>
+          <button class="chip" data-filter="selesai">Sudah lewat</button>
+        </div>
+
+        <div class="schedule" id="schedule"></div>
+        <p class="empty" id="scheduleEmpty" hidden>Belum ada kegiatan pada kategori ini.</p>
+      </div>
+    </section>
+
+    <!-- ============ TIPS MERAWAT BURUNG ============ -->
+    <section class="section section-alt" id="tips">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Tips Merawat Burung</p>
+          <h2>Burung sehat, kicau merdu</h2>
+          <p class="section-sub">Panduan dasar dari pengalaman anggota kami. Klik judul untuk membuka detailnya.</p>
+        </div>
+
+        <div class="tip-of-day reveal">
+          <span aria-hidden="true">💡</span>
+          <p><strong>Tips hari ini:</strong> <span id="tipOfDay"></span></p>
+        </div>
+
+        <div class="accordion reveal" id="accordion">
+
+          <div class="acc-item">
+            <h3>
+              <button class="acc-btn" aria-expanded="false" aria-controls="acc1" id="accb1">
+                <span class="acc-ico" aria-hidden="true">🌾</span> Pakan yang seimbang
+                <span class="acc-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc1" role="region" aria-labelledby="accb1">
+              <div>
+                <p>Berikan pakan utama sesuai jenis burung (biji-bijian, voer, atau buah), lalu tambahkan variasi seperti
+                sayuran hijau, buah segar, dan serangga (jangkrik, ulat hongkong) sebagai sumber protein.</p>
+                <ul>
+                  <li>Ganti pakan setiap hari dan buang sisa yang basah atau berjamur.</li>
+                  <li>Hindari pakan manis, asin, atau berminyak untuk manusia.</li>
+                  <li>Ubah komposisi secara bertahap agar pencernaan burung tidak kaget.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <h3>
+              <button class="acc-btn" aria-expanded="false" aria-controls="acc2" id="accb2">
+                <span class="acc-ico" aria-hidden="true">💧</span> Air minum dan mandi
+                <span class="acc-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc2" role="region" aria-labelledby="accb2">
+              <div>
+                <p>Air bersih harus selalu tersedia. Ganti air minum minimal sekali sehari dan cuci tempatnya agar tidak berlendir.</p>
+                <ul>
+                  <li>Mandikan burung 2–3 kali seminggu, atau sediakan tempat mandi dangkal di dalam kandang.</li>
+                  <li>Lakukan di pagi hari, lalu biarkan bulu mengering di tempat teduh berangin ringan.</li>
+                  <li>Jangan memandikan burung yang sedang sakit atau saat cuaca sangat dingin.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <h3>
+              <button class="acc-btn" aria-expanded="false" aria-controls="acc3" id="accb3">
+                <span class="acc-ico" aria-hidden="true">☀️</span> Penjemuran yang tepat
+                <span class="acc-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc3" role="region" aria-labelledby="accb3">
+              <div>
+                <p>Sinar matahari pagi membantu pembentukan vitamin D dan menjaga kondisi bulu.</p>
+                <ul>
+                  <li>Jemur sekitar pukul 07.00–09.00 selama 30–60 menit.</li>
+                  <li>Sediakan sisi kandang yang teduh agar burung bisa berpindah.</li>
+                  <li>Hentikan penjemuran bila burung terlihat megap-megap atau gelisah.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <h3>
+              <button class="acc-btn" aria-expanded="false" aria-controls="acc4" id="accb4">
+                <span class="acc-ico" aria-hidden="true">🏠</span> Kandang yang nyaman dan bersih
+                <span class="acc-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc4" role="region" aria-labelledby="accb4">
+              <div>
+                <p>Pilih kandang dengan ukuran cukup agar burung bisa merentangkan sayap dan berpindah tempat bertengger.</p>
+                <ul>
+                  <li>Bersihkan dasar kandang setiap hari dan cuci seluruh kandang seminggu sekali.</li>
+                  <li>Letakkan di tempat yang tenang, tidak terkena asap, hujan langsung, atau angin kencang.</li>
+                  <li>Gunakan tempat bertengger dengan diameter bervariasi untuk melatih kaki burung.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <h3>
+              <button class="acc-btn" aria-expanded="false" aria-controls="acc5" id="accb5">
+                <span class="acc-ico" aria-hidden="true">🩺</span> Mengenali tanda burung sakit
+                <span class="acc-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc5" role="region" aria-labelledby="accb5">
+              <div>
+                <p>Burung sering menyembunyikan rasa sakit, jadi perhatikan perubahan kecil pada perilakunya.</p>
+                <ul>
+                  <li>Bulu mengembang terus-menerus, mata sayu, atau lebih banyak diam.</li>
+                  <li>Nafsu makan turun drastis atau kotoran berubah warna dan konsistensi.</li>
+                  <li>Napas berbunyi atau ekor naik-turun saat bernapas.</li>
+                </ul>
+                <p>Bila gejala berlanjut lebih dari sehari, segera konsultasikan ke dokter hewan.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <h3>
+              <button class="acc-btn" aria-expanded="false" aria-controls="acc6" id="accb6">
+                <span class="acc-ico" aria-hidden="true">🎶</span> Menjaga mental dan stres burung
+                <span class="acc-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc6" role="region" aria-labelledby="accb6">
+              <div>
+                <p>Burung yang stres mudah sakit dan jarang berkicau. Biasakan burung dengan suasana sekitar secara bertahap.</p>
+                <ul>
+                  <li>Jaga jadwal harian yang konsisten: makan, mandi, jemur, dan istirahat.</li>
+                  <li>Beri waktu istirahat dengan menutup sebagian kandang pada malam hari.</li>
+                  <li>Hindari memindahkan atau menyentuh burung terlalu sering.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="acc-item">
+            <h3>
+              <button class="acc-btn" aria-expanded="false" aria-controls="acc7" id="accb7">
+                <span class="acc-ico" aria-hidden="true">🌳</span> Pilih burung hasil penangkaran
+                <span class="acc-arrow" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc-panel" id="acc7" role="region" aria-labelledby="accb7">
+              <div>
+                <p>Burung hasil penangkaran lebih mudah beradaptasi, lebih sehat, dan tidak mengurangi populasi di alam.</p>
+                <ul>
+                  <li>Minta keterangan asal-usul burung dari penjual atau penangkar.</li>
+                  <li>Pastikan jenis burung yang dipelihara bukan satwa dilindungi.</li>
+                  <li>Jangan membeli burung yang ditangkap dari alam secara ilegal.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GABUNG ============ -->
+    <section class="section join" id="gabung">
+      <div class="container join-inner">
+        <div class="join-text reveal">
+          <p class="eyebrow light">Bergabung</p>
+          <h2>Ingin ikut berkicau bersama kami?</h2>
+          <p>Isi formulir singkat ini dan pengurus akan menghubungi Anda. Tidak perlu punya burung untuk bergabung — cukup suka dan mau belajar.</p>
+          <ul class="contact-list">
+            <li>📍 Sekretariat: Jl. Merpati No. 12 (contoh alamat)</li>
+            <li>📞 0812-3456-7890 (contoh)</li>
+            <li>✉️ halo@kicaunusantara.example</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="joinForm" novalidate>
+          <div class="field">
+            <label for="nama">Nama lengkap</label>
+            <input type="text" id="nama" name="nama" autocomplete="name" required>
+            <small class="error" id="namaError"></small>
+          </div>
+          <div class="field">
+            <label for="kontak">Email atau nomor WhatsApp</label>
+            <input type="text" id="kontak" name="kontak" autocomplete="off" required>
+            <small class="error" id="kontakError"></small>
+          </div>
+          <div class="field">
+            <label for="minat">Burung yang diminati</label>
+            <select id="minat" name="minat">
+              <option>Belum punya, ingin belajar</option>
+              <option>Burung kicau</option>
+              <option>Burung hias / paruh bengkok</option>
+              <option>Merpati / burung lainnya</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pesan">Pesan (opsional)</label>
+            <textarea id="pesan" name="pesan" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Kirim Pendaftaran</button>
+          <p class="form-success" id="formSuccess" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="brand footer-brand"><span class="brand-icon" aria-hidden="true">🐦</span> Kicau<strong>Nusantara</strong></p>
+      <p>© <span id="year"></span> Komunitas Kicau Nusantara. Cintai burung, jaga alam.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Pratinjau gambar">
+    <button class="lb-close" id="lbClose" aria-label="Tutup">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Sebelumnya">&#8249;</button>
+    <figure class="lb-figure">
+      <div class="lb-art" id="lbArt"></div>
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Berikutnya">&#8250;</button>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas" hidden>↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
