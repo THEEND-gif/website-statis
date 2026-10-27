@@ -9,15 +9,15 @@
 
   // Galeri: gambar dibuat dari emoji + warna latar (tanpa file gambar eksternal)
   const galleryItems = [
-    { cat: 'kicau',    emoji: '🐦', title: 'Murai batu sedang berkicau',        bg: ['#2f6f4e', '#8fc7a3'] },
-    { cat: 'kicau',    emoji: '🐤', title: 'Kenari pagi hari',                  bg: ['#d98e04', '#f7d774'] },
-    { cat: 'hias',     emoji: '🦜', title: 'Lovebird berpasangan',              bg: ['#c2573a', '#f2a58f'] },
-    { cat: 'hias',     emoji: '🦚', title: 'Merak hijau koleksi anggota',       bg: ['#1f6f78', '#7fcbd2'] },
+    { cat: 'kicau',    images: 'img/muraibatu.jpg', title: 'Murai batu sedang berkicau' },
+    { cat: 'kicau',    images: 'img/kenaripagi.jpg', title: 'Kenari pagi hari' },
+    { cat: 'hias',     images: 'img/lovebird.jpg', title: 'Lovebird berpasangan' },
+    { cat: 'hias',     images: 'img/merakhijau.jpg', title: 'Merak hijau koleksi anggota' },
     { cat: 'kegiatan', emoji: '🤝', title: 'Kopdar bulanan di sekretariat',     bg: ['#3a7ca5', '#9cc9e4'] },
     { cat: 'kegiatan', emoji: '🏆', title: 'Lomba kicau persahabatan',          bg: ['#8a5a9e', '#d3b0e2'] },
-    { cat: 'kicau',    emoji: '🕊️', title: 'Perkutut dengan suara khas',        bg: ['#6b7b8c', '#c4ced8'] },
-    { cat: 'kegiatan', emoji: '🌳', title: 'Bersih-bersih dan tanam pohon',     bg: ['#4c8c3a', '#b5dca5'] },
-    { cat: 'hias',     emoji: '🦉', title: 'Burung hantu di kandang edukasi',   bg: ['#7a5c3a', '#d9bd96'] }
+    { cat: 'kicau',    images: 'img/perkutut.jpg', title: 'Perkutut dengan suara khas' },
+    { cat: 'kegiatan', images: 'img/bersih2.jpg', title: 'Bersih-bersih dan tanam pohon' },
+    { cat: 'hias',     images: 'img/burunghantu.jpg', title: 'Burung hantu di kandang edukasi' },
   ];
 
   // Jadwal: tanggal dihitung relatif dari hari ini agar countdown selalu aktif
@@ -267,12 +267,21 @@
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'gallery-item';
-      btn.style.background = `linear-gradient(135deg, ${g.bg[0]}, ${g.bg[1]})`;
-      btn.setAttribute('aria-label', `Perbesar: ${g.title}`);
-      btn.innerHTML = `
-        <span class="g-emoji" aria-hidden="true">${g.emoji}</span>
-        <span class="g-cap">${g.title}</span>
-      `;
+
+      if (g.images) {
+        btn.style.background = 'none';
+        btn.innerHTML = `
+          <img src="${g.images}" alt="${g.title}" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+          <span class="g-cap">${g.title}</span>
+        `;
+      } else {
+        btn.style.background = `linear-gradient(135deg, ${g.bg[0]}, ${g.bg[1]})`;
+        btn.innerHTML = `
+          <span class="g-emoji" aria-hidden="true">${g.emoji}</span>
+          <span class="g-cap">${g.title}</span>
+        `;
+      }
+      
       btn.addEventListener('click', () => openLightbox(i, btn));
       galleryEl.appendChild(btn);
     });
@@ -289,8 +298,14 @@
   function showLightboxItem() {
     const g = visibleItems[lbIndex];
     if (!g) return;
-    lbArt.style.background = `linear-gradient(135deg, ${g.bg[0]}, ${g.bg[1]})`;
-    lbArt.textContent = g.emoji;
+
+    if (g.images) {
+      lbArt.style.background = 'none';
+      lbArt.innerHTML = `<img src="${g.images}" alt="${g.title}" style="width:100%;height:100%;object-fit:contain;border-radius:inherit;">`;
+    } else {
+      lbArt.style.background = `linear-gradient(135deg, ${g.bg[0]}, ${g.bg[1]})`;
+      lbArt.textContent = g.emoji;
+    }
     lbCaption.textContent = `${g.title} (${lbIndex + 1} dari ${visibleItems.length})`;
   }
 
