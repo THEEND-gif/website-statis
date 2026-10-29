@@ -14,4 +14,4 @@ Website statis ini dibuat untuk memberikan informasi seputar kegiatan Komunitas 
 3. Buka file `index.html` menggunakan browser.
 
 ## Screenshot Hasil Website
-<img width="1365" height="636" alt="image" src="https://github.com/user-attachments/assets/430e646d-aad2-4b51-95c8-76710525652e" />
+<img width="1366" height="639" alt="image" src="https://github.com/user-attachments/assets/6e90503d-f4b3-42c2-9139-3a9af1c727fe" />
